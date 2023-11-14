@@ -40,8 +40,8 @@ git+https://github.com/openai/CLIP.git
 #controlnet
 controlnet_aux
 
-imageio==2.19.3
-imageio-ffmpeg==0.4.7
+#imageio==2.19.3
+#imageio-ffmpeg==0.4.7
 
 setuptools==49.4.0
 
