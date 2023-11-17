@@ -1,5 +1,5 @@
 name: sjc
-tag: "${rmspace:${system.prompt_processor.prompt},_}"
+tag: "prompt"
 exp_root_dir: "outputs-gradio"
 seed: 0
 

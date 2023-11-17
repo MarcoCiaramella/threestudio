@@ -1,5 +1,5 @@
 name: "prolificdreamer-propnet"
-tag: "${rmspace:${system.prompt_processor.prompt},_}"
+tag: "prompt"
 exp_root_dir: "outputs"
 seed: 0
 
