@@ -98,6 +98,9 @@ def main(args, extras) -> None:
     cfg: ExperimentConfig
     cfg = load_config(args.config, cli_args=extras, n_gpus=n_gpus)
 
+    with open(cfg.system.prompt_processor.prompt) as f:
+        cfg.system.prompt_processor.prompt = f.read()
+
     # set a different seed for each device
     pl.seed_everything(cfg.seed + get_rank(), workers=True)
 
