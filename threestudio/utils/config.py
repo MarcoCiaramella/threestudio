@@ -77,6 +77,7 @@ class ExperimentConfig:
     checkpoint: dict = field(default_factory=dict)
 
     def __post_init__(self):
+        self.use_timestamp = False
         if not self.tag and not self.use_timestamp:
             raise ValueError("Either tag is specified or use_timestamp is True.")
         self.trial_name = self.tag
